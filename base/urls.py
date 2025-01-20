@@ -2,5 +2,5 @@ from django.urls import path
 from .views.tudolist_views import TudoListView
 
 urlpatterns = [
-    path('',TudoListView.home,name="home")
+    path('',TudoListView.TaskList.as_view(),name="home")
 ]
